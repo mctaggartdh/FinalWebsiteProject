@@ -1,0 +1,58 @@
+body{
+    color:navy;
+    background-color: moccasin;
+    font-size: 1.2em;
+    font-family: Cambria,Georgia,"Book Antiqua",serif;
+}
+
+h1{
+    color:seagreen;
+    font-family: "Century Gothic", sans-serif;
+}
+
+h2{
+    color:firebrick;
+    background-color: sandybrown;
+    width: fit-content;
+    font-weight: lighter;
+}
+
+strong{
+    background-color: lavender;
+}
+
+p{
+    color: darkblue;
+    font-family: Helvetica,Arial, sans-serif;
+}
+
+
+li{
+    font-style: italic;
+    font-family: Helvetica,Arial, sans-serif;
+}
+
+a:link{
+    color:rgb(63, 83, 33);
+    font-family: Impact, serif;
+    text-transform: capitalize;
+}
+
+a:visited{
+    color:black;
+    font-family: Impact, serif;
+}
+
+a:hover{
+    color:darkred;
+    font-family: Impact, serif;
+    text-transform: uppercase;
+    
+}
+
+a:active{
+    color:midnightblue;
+    font-family: Impact, serif;
+    background-color: cyan;
+    
+}
