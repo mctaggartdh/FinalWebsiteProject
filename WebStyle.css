@@ -1,58 +1,206 @@
-body{
-    color:navy;
-    background-color: moccasin;
+body {
+    color: rgb(0, 0, 49);
+    background-color: #dfedff;
     font-size: 1.2em;
-    font-family: Cambria,Georgia,"Book Antiqua",serif;
+    font-family: Arial, Georgia, "Book Antiqua", sans-serif;
+    margin-right: 7%;
+    margin-left: 7%;
+    border: 3px darkblue solid;
+    padding: 1.5em;
 }
 
-h1{
-    color:seagreen;
-    font-family: "Century Gothic", sans-serif;
+h1 {
+    margin-left: 33%;
+    margin-bottom: 50px;
 }
 
-h2{
-    color:firebrick;
-    background-color: sandybrown;
-    width: fit-content;
-    font-weight: lighter;
+h2 {
+    /* width: fit-content; */
+    /* font-weight: lighter; */
+    font-size: 1.3em;
+    text-align: center;
 }
 
-strong{
+strong {
     background-color: lavender;
 }
 
-p{
-    color: darkblue;
-    font-family: Helvetica,Arial, sans-serif;
+p {
+    font-weight: bold;
+    font-size: 1em;
+    margin-left: 2%;
+    margin-right: 3%;
+}
+
+li {
+    font-weight: bold;
 }
 
 
-li{
-    font-style: italic;
-    font-family: Helvetica,Arial, sans-serif;
-}
-
-a:link{
-    color:rgb(63, 83, 33);
+/* a:link {
+    color: rgb(63, 83, 33);
     font-family: Impact, serif;
     text-transform: capitalize;
 }
 
-a:visited{
-    color:black;
+a:visited {
+    color: black;
     font-family: Impact, serif;
 }
 
-a:hover{
-    color:darkred;
+a:hover {
+    color: darkred;
     font-family: Impact, serif;
     text-transform: uppercase;
-    
 }
 
-a:active{
-    color:midnightblue;
+
+a:active {
+    color: midnightblue;
     font-family: Impact, serif;
     background-color: cyan;
-    
+} */
+
+
+/* #sigmalogo {
+    width: 45%;
+} */
+
+
+/* #spectrumlogo {
+    width: 45%;
+    margin-left: 9%;
+} */
+
+
+/* #fisherlogo {
+    width: 60%;
+    margin-left: 20%;
+} */
+
+img.logos {
+    /* border: 3px blue solid; */
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+div#solventLogoflex {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* border: 3px solid gray */
+}
+
+div#logoflex {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    /* width: 10%; */
+    /* justify-content: space-around; */
+    border: 3px ridge darkblue;
+}
+
+div#solventflex {
+    /* margin-top: 0%; */
+    line-height: 4em;
+    border: 3px ridge darkblue;
+    padding-left: 3%;
+    padding-right: 6%;
+    margin-left: 7%;
+}
+
+ul#solventlist {
+    margin-top: -30px;
+}
+
+img.lewisStructure {
+    float: right;
+    width: 40%;
+    margin-right: 10%;
+}
+
+img#toluene {
+    float: right;
+    width: 25%;
+    margin-right: 15%;
+}
+
+h1.solventhead {
+    margin-left: 0%;
+}
+
+p.solventproperties {
+    text-align: left;
+    font-size: 1.2em;
+}
+
+
+/* div.companyPriceflex {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+}
+
+div.companyFlex {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    line-height: 2em;
+}
+
+div.company {
+    border: 3px black solid;
+}
+
+div.priceFlex {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    line-height: 2em;
+}
+
+div.price {
+    border: 3px black solid;
+} */
+
+table {
+    margin-left: 2%;
+    border: 3px darkblue groove;
+    /* border-collapse: collapse; */
+}
+
+
+/* tbody {
+    margin-left: 20%;
+    background-color: darkgoldenrod;
+} */
+
+tr {
+    margin-left: 20%;
+    border: 3px darkblue groove;
+}
+
+td {
+    border: 3px darkblue groove;
+    font-weight: 700;
+    background-color: lightblue;
+}
+
+th {
+    border: 3px darkblue groove;
+    font-weight: 900;
+    background-color: rgb(117, 196, 223);
+}
+
+
+/* td {
+    padding: 10%;
+} */
+
+#chemspiderref {
+    font-size: 0.75em;
+    text-align: right;
 }
