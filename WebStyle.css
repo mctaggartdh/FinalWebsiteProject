@@ -208,9 +208,7 @@ iframe.themodel {
 }
 
 img#toluene {
-    float: right;
-    width: 25%;
-    margin-right: 15%;
+    margin-bottom: 10%;
 }
 
 h1.solventhead {
@@ -435,6 +433,14 @@ img#tolirbig {
     }
 }
 
+@media (max-width: 920px) {
+    h1#dich {
+        font-size: 1.6em;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
 @media (max-width: 880px) {
     body {
         margin-left: 5%;
@@ -469,6 +475,9 @@ img#tolirbig {
     img.specIR {
         width: 75%;
     }
+    h1.solventhead {
+        margin-bottom: 0%;
+    }
 }
 
 @media (max-width: 775px) {
@@ -488,6 +497,11 @@ img#tolirbig {
     h2 {
         margin-left: 32%;
         margin-right: 32%;
+    }
+    h1#dich {
+        font-size: 1.5em;
+        margin-left: 19%;
+        margin-right: 19%;
     }
 }
 
@@ -510,12 +524,12 @@ img#tolirbig {
         margin-right: 0%;
         margin-left: 10%;
     } */
-    img#toluene {
+    /* img#toluene {
         float: none;
         width: 75%;
         margin-right: 0%;
         margin-left: 2%;
-    }
+    } */
 }
 
 @media (max-width: 375px) {
@@ -537,5 +551,15 @@ img#tolirbig {
     }
     h1.solventhead {
         margin-bottom: 5%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    img#toluene {
+        margin-bottom: 3%;
+    }
+    h1#dich {
+        font-size: 1.5em;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }
