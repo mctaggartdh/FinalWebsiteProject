@@ -365,7 +365,11 @@ div.tablediv {
     justify-content: center;
 }
 
-div#ethanolnmrdiv {
+
+/* Ethanol mouseover spectra */
+
+div#ethanolnmrdiv,
+div#ethylacenmrdiv {
     visibility: hidden;
     position: fixed;
     top: 1%;
@@ -374,7 +378,8 @@ div#ethanolnmrdiv {
     transition-duration: 1s;
 }
 
-img#ethanolnmrbig {
+img#ethanolnmrbig,
+img#ethylacenmrbig {
     opacity: 0;
     width: 90%;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -382,7 +387,8 @@ img#ethanolnmrbig {
     transition-duration: 1s;
 }
 
-div#ethanolirdiv {
+div#ethanolirdiv,
+div#ethylaceirdiv {
     visibility: hidden;
     position: fixed;
     top: 1%;
@@ -391,7 +397,8 @@ div#ethanolirdiv {
     transition-duration: 1s;
 }
 
-img#ethanolirbig {
+img#ethanolirbig,
+img#ethylaceirbig {
     opacity: 0;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     width: 90%;
