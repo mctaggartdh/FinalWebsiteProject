@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Solvent Price Tool Homepage</title>
     <link rel="stylesheet" href="WebStyle.css">
+    <script src="solvent.js" defer></script>
 </head>
 
-<body>
+<body class="preload">
 
     <h1>
         Solvent Price Tool
@@ -17,33 +18,45 @@
 
 
 
-    <p>This site allows users to compare the prices of common organic solvents among popular chemical supply companies. Click on the desired solvent to visit a page comparing its price among the listed supply companies. Click on the logos to visit the homepages
+    <p id="intro">This site allows users to compare the prices of common organic solvents among popular chemical supply companies. Click on the desired solvent to visit a page comparing its price among the listed supply companies. Click on the logos to visit the homepages
         of each supply company.
     </p>
 
     <div id="solventLogoflex">
+        <h2>Solvent List</h2>
         <div id="solventflex">
-            <h2>Solvent List</h2>
-            <ul id="solventlist">
-                <li><a href="ethanol.html">Ethanol</a></li>
-                <li><a href="ethylacetate.html">Ethyl Acetate</a></li>
-                <li><a href="diethylether.html">Diethyl Ether</a></li>
-                <li><a href="dichloro.html">Dichloromethane</a></li>
-                <li><a href="hexane.html">Hexane</a></li>
-                <li><a href="toluene.html">Toluene</a></li>
-            </ul>
+            <div id="smallscreen">
+                <div id=solventlistdiv>
+                    <div class="solList">
+                        <a href="ethanol.html">Ethanol</a>
+                        <a href="ethylacetate.html">Ethyl Acetate</a>
+                        <a href="diethylether.html">Diethyl Ether</a>
+                    </div>
+                    <div class="solList">
+                        <a href="hexane.html">Hexane</a>
+                        <a href="dichloro.html">Dichloromethane</a>
+                        <a href="toluene.html">Toluene</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="logoflex">
-            <h2>Companies</h2>
+        <h2>Companies</h2>
+        <div id="logoborder">
+            <!-- <div id="logoflex"> -->
+            <!-- <div id="floatsigma"> -->
             <a href="https://www.sigmaaldrich.com/united-states.html" target="_blank">
                 <img class="logos" id="sigmalogo" src="images/sigmaa.png" alt="Click to visit Sigma-Aldrich Homepage" title="Click to visit Sigma-Aldrich Homepage"></a>
+            <!-- </div> -->
             <a href="https://www.spectrumchemical.com/OA_HTML/index.jsp?minisite=10020&respid=22372&language=US" target="_blank">
                 <img class="logos" id="spectrumlogo" src="images/spectrum3.png" alt="Click to visit Spectrum Chemical Homepage" title="Click to visit Spectrum Chemical Homepage"></a>
+            <!-- </div> -->
             <a href="https://www.fishersci.com/us/en/home.html?gclid=EAIaIQobChMI09zcsqGg4AIVj4SzCh2YcQAlEAAYASAAEgKInvD_BwE&ppc_id=FisherSciBrand_goog_979894219_47449837174_fishersci_e_231758087496_15519473700465238125&s_kwcid=AL!4428!3!231758087496!e!!g!!fishersci&ef_id=EAIaIQobChMI09zcsqGg4AIVj4SzCh2YcQAlEAAYASAAEgKInvD_BwE:G:s&ppc_id=FisherSciBrand_goog_979894219_47449837174_fishersci_e_231758087496_15519473700465238125"
                 target="_blank">
                 <img class="logos" id="fisherlogo" src="images/fisher2.png" alt="Click to visit Fisher Scientific Homepage" title="Click to visit Fisher Scientific Homepage"></a>
         </div>
     </div>
+
+    <p id="develop">Pages created and developed by Don McTaggart. Contact <a href="mailto:mctaggartdh@guilford.edu" class="email">mctaggartdh@guilford.edu</a></p>
 
 
 </body>
