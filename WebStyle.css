@@ -24,6 +24,15 @@ h1 {
     margin-bottom: 50px;
 }
 
+h1#homepage {
+    border-top: 3px darkblue groove;
+    border-bottom: 3px darkblue groove;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
 h2 {
     /* width: fit-content; */
     /* font-weight: lighter; */
@@ -171,6 +180,8 @@ div#solventflex {
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 3%;
+    transition-property: all;
+    transition-duration: 0.5s;
 }
 
 div#solventlistdiv {
@@ -188,7 +199,12 @@ div.solList {
 img.lewisStructure {
     /* float: right; */
     width: 100%;
-    margin-bottom: 10%;
+    margin-bottom: 25%;
+    margin-top: 5%;
+}
+
+iframe.themodel {
+    margin-right: 5%;
 }
 
 img#toluene {
@@ -199,11 +215,22 @@ img#toluene {
 
 h1.solventhead {
     margin-left: 0%;
+    border-top: 3px darkblue groove;
+    border-bottom: 3px darkblue groove;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 p.solventproperties {
     text-align: left;
     font-size: 1.2em;
+    margin-left: 0%;
+}
+
+.pricetable {
+    margin-top: 2%;
 }
 
 
@@ -236,7 +263,7 @@ div.price {
 } */
 
 table {
-    margin-left: 2%;
+    /* margin-left: 2%; */
     border: 3px darkblue groove;
     /* border-collapse: collapse; */
 }
@@ -300,11 +327,42 @@ div.propmodeldiv {
 div.modeldiv {
     display: flex;
     flex-direction: column;
-    margin-right: 10%;
+    margin-right: 3%;
+    margin-left: 3%;
+    transition-property: all;
+    transition-duration: 0.5s;
 }
 
-img.spec {
-    width: 40%;
+div.specsdiv {
+    display: flex;
+    flex-direction: row;
+}
+
+div.labelspecdiv {
+    display: flex;
+    flex-direction: column;
+}
+
+img.specNMR {
+    width: 96%;
+    border: 3px darkblue groove;
+}
+
+img.specIR {
+    width: 75%;
+    border: 3px darkblue groove;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+p.reallabels {
+    margin-top: 1%;
+    font-size: 0.7em;
+}
+
+div.tablediv {
+    display: flex;
+    justify-content: center;
 }
 
 div#ethanolnmrdiv {
@@ -318,6 +376,7 @@ div#ethanolnmrdiv {
 
 img#ethanolnmrbig {
     opacity: 0;
+    width: 90%;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     transition-property: all;
     transition-duration: 1s;
@@ -340,13 +399,52 @@ img#ethanolirbig {
     transition-duration: 1s;
 }
 
-@media (max-width:880px) {
+@media (max-width:1000px) {
+    div.specsdiv {
+        flex-direction: column;
+    }
+    img.specIR {
+        width: 95%;
+    }
+    body.solventbody {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 880px) {
     body {
         margin-left: 5%;
         margin-right: 5%;
     }
     p.safety {
         margin-right: 0%
+    }
+    div.propmodeldiv {
+        flex-direction: column-reverse;
+    }
+    div.centermodels {
+        display: flex;
+        justify-content: center;
+    }
+    div.modeldiv {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    img.lewisStructure {
+        width: 75%;
+        margin-bottom: 5%;
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+    iframe.themodel {
+        margin-right: 0%;
+    }
+    div.specsdiv {
+        flex-direction: row;
+    }
+    img.specIR {
+        width: 75%;
     }
 }
 
@@ -374,17 +472,21 @@ img#ethanolirbig {
     div.solList {
         flex-direction: column;
     }
+    div#solventflex {
+        margin-left: 14%;
+        margin-right: 14%;
+    }
     div#smallscreen {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
-    img.lewisStructure {
+    /* img.lewisStructure {
         float: none;
         width: 85%;
         margin-right: 0%;
         margin-left: 10%;
-    }
+    } */
     img#toluene {
         float: none;
         width: 55%;
@@ -407,8 +509,10 @@ img#ethanolirbig {
         margin-left: 0%;
         font-size: 0.9em;
     }
-    div#solventflex {
-        margin-left: 14%;
-        margin-right: 14%;
+    div.propdiv {
+        font-size: 0.85em;
+    }
+    h1.solventhead {
+        margin-bottom: 5%;
     }
 }

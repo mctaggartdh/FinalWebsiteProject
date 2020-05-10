@@ -10,15 +10,15 @@
     <script src="ethanol.js" defer></script>
 </head>
 
-<body>
+<body class="solventbody">
     <a href="solventhp.html">Return to main</a>
 
     <h1 class="solventhead">Ethanol</h1>
+
+    <div id="ethanolnmrdiv"><img id="ethanolnmrbig" src="images/ethanol_nmr.jpg" alt="Ethanol NMR"></div>
+    <div id="ethanolirdiv"><img id="ethanolirbig" src="images/ethanol_ir.jpg" alt="Ethanol IR"></div>
+
     <div class="propmodeldiv">
-
-        <div id="ethanolnmrdiv"><img id="ethanolnmrbig" src="images/ethanol_nmr.jpg" alt="Ethanol NMR"></div>
-        <div id="ethanolirdiv"><img id="ethanolirbig" src="images/ethanol_ir.jpg" alt="Ethanol IR"></div>
-
         <div class="propdiv">
             <p class="solventproperties">Molecular Formula: C<sub>2</sub>H<sub>5</sub>OH</p>
             <p class="solventproperties">Molecular Weight: 46.07 g/mol</p>
@@ -27,45 +27,57 @@
             <p class="solventproperties safety"><a href="https://fscimage.fishersci.com/msds/89308.htm" target="_blank">Safety Information</a>: Flamable liquid/vapor, causes eye/respiratory/skin irritation, adverse reproductive/fetal effects in humans, may cause central nervous system depression
                 as well as liver/kidney/heart damage</p>
 
-            <a href="https://scifinder.cas.org/scifinder/view/scifinder/scifinderExplore.jsf" target="_blank">
-                <img class="spec" id="ethanolnmrsmall" src="images/ethanol_nmr.jpg" alt="Ethanol NMR" title="Click to visit SciFinder"></a>
-
-            <a href="https://scifinder.cas.org/scifinder/view/scifinder/scifinderExplore.jsf" target="_blank">
-                <img class="spec" id="ethanolirsmall" src="images/ethanol_ir.jpg" alt="Ethanol IR" title="Click to visit SciFinder"></a>
+            <div class="specsdiv">
+                <div class="labelspecdiv">
+                    <a href="https://scifinder.cas.org/scifinder/view/scifinder/scifinderExplore.jsf" target="_blank">
+                        <img class="specNMR" id="ethanolnmrsmall" src="images/ethanol_nmr.jpg" alt="Ethanol NMR" title="Click to visit SciFinder"></a>
+                    <p class="reallabels">NMR Spectrum</p>
+                </div>
+                <div class="labelspecdiv">
+                    <a href="https://scifinder.cas.org/scifinder/view/scifinder/scifinderExplore.jsf" target="_blank">
+                        <img class="specIR" id="ethanolirsmall" src="images/ethanol_ir.jpg" alt="Ethanol IR" title="Click to visit SciFinder"></a>
+                    <p class="reallabels">IR Spectrum</p>
+                </div>
+            </div>
         </div>
         <div class="modeldiv">
-            <div><img class="lewisStructure" src="images/ethanol2.png" alt="Ethanol Lewis Structure" title="Ethanol Lewis Structure"></div>
-            <div> <iframe class="lewisStructure" style="width: 400px; height: 250px;" frameborder="2" src="https://embed.molview.org/v1/?mode=balls&cid=702&bg=gray"></iframe></div>
+            <div class="centermodels"><img class="lewisStructure" src="images/ethanol2.png" alt="Ethanol Lewis Structure" title="Ethanol Lewis Structure"></div>
+            <div class="centermodels"><iframe class="themodel" style="width: 400px; height: 250px;" frameborder="2" src="https://embed.molview.org/v1/?mode=balls&cid=702&bg=gray"></iframe></div>
+            <div class="centermodels">
+                <p class="reallabels">Interactive 3D model</p>
+            </div>
         </div>
     </div>
-    <table class="pricetable" cellpadding="14%">
-        <tbody>
-            <tr>
-                <th>Company</th>
-                <th>Purity</th>
-                <th>Price (1L)</th>
+    <div class="tablediv">
+        <table class="pricetable" cellpadding="14%">
+            <tbody>
+                <tr>
+                    <th>Company</th>
+                    <th>Purity</th>
+                    <th>Price (1L)</th>
 
-            </tr>
-            <tr>
-                <td>
-                    <a href="https://www.sigmaaldrich.com/catalog/product/sial/459836?lang=en&region=US" target="_blank">Sigma-Aldrich</a>
-                </td>
-                <td>99.5%</td>
-                <td>$128.00</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.spectrumchemical.com/OA_HTML/chemical-products_Ethyl-Alcohol-Absolute-200-Proof-Reagent-ACS_E1028.jsp?minisite=10020&respid=22372&phrase=Ethanol%20200%20Proof" target="_blank">Spectrum Chemical</a></td>
-                <td>99.5%</td>
-                <td>$167.00</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.fishersci.com/shop/products/dehydrated-alcohol-200-proof-undenatured-usp-99-5-spectrum-8/18602026" target="_blank">Fisher Scientific</a></td>
-                <td>99.5%</td>
-                <td>$176.40</td>
-            </tr>
-        </tbody>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.sigmaaldrich.com/catalog/product/sial/459836?lang=en&region=US" target="_blank">Sigma-Aldrich</a>
+                    </td>
+                    <td>99.5%</td>
+                    <td>$128.00</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.spectrumchemical.com/OA_HTML/chemical-products_Ethyl-Alcohol-Absolute-200-Proof-Reagent-ACS_E1028.jsp?minisite=10020&respid=22372&phrase=Ethanol%20200%20Proof" target="_blank">Spectrum Chemical</a></td>
+                    <td>99.5%</td>
+                    <td>$167.00</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.fishersci.com/shop/products/dehydrated-alcohol-200-proof-undenatured-usp-99-5-spectrum-8/18602026" target="_blank">Fisher Scientific</a></td>
+                    <td>99.5%</td>
+                    <td>$176.40</td>
+                </tr>
+            </tbody>
 
-    </table>
+        </table>
+    </div>
 
     <p id="chemspiderref">Properties data comes from <a href="http://www.chemspider.com/">ChemSpider</a>, safety information linked separately</p>
 
