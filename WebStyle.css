@@ -366,10 +366,14 @@ div.tablediv {
 }
 
 
-/* Ethanol mouseover spectra */
+/* Mouseover spectra */
 
 div#ethanolnmrdiv,
-div#ethylacenmrdiv {
+div#ethylacenmrdiv,
+div#diethylnmrdiv,
+div#hexnmrdiv,
+div#dichnmrdiv,
+div#tolnmrdiv {
     visibility: hidden;
     position: fixed;
     top: 1%;
@@ -379,7 +383,11 @@ div#ethylacenmrdiv {
 }
 
 img#ethanolnmrbig,
-img#ethylacenmrbig {
+img#ethylacenmrbig,
+img#diethylnmrbig,
+img#hexnmrbig,
+img#dichnmrbig,
+img#tolnmrbig {
     opacity: 0;
     width: 90%;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -388,7 +396,11 @@ img#ethylacenmrbig {
 }
 
 div#ethanolirdiv,
-div#ethylaceirdiv {
+div#ethylaceirdiv,
+div#diethylirdiv,
+div#hexirdiv,
+div#dichirdiv,
+div#tolirdiv {
     visibility: hidden;
     position: fixed;
     top: 1%;
@@ -398,7 +410,11 @@ div#ethylaceirdiv {
 }
 
 img#ethanolirbig,
-img#ethylaceirbig {
+img#ethylaceirbig,
+img#diethylirbig,
+img#hexirbig,
+img#dichirbig,
+img#tolirbig {
     opacity: 0;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     width: 90%;
@@ -496,9 +512,9 @@ img#ethylaceirbig {
     } */
     img#toluene {
         float: none;
-        width: 55%;
+        width: 75%;
         margin-right: 0%;
-        margin-left: 22%;
+        margin-left: 2%;
     }
 }
 
